@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "book",
+        "hooks": [
+          { "type": "command", "command": "echo 'Scanning logic'" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "write",
+        "hooks": [
+          { "type": "command", "command": "npm run lint" }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "MAX_THINKING_TOKENS": "10000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "50"
+  }
+}

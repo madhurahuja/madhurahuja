@@ -1,0 +1,12 @@
+name: code-reviewer
+description: Reviews diffs for correctness, security, and architecture-contract compliance
+tools:
+  - read_file
+  - diff
+capabilities:
+  - validate_contracts
+  - detect_guardrail_violations
+  - suggest_targeted_refactors
+outputs:
+  - APPROVED
+  - CHANGES_REQUESTED

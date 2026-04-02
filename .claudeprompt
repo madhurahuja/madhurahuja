@@ -1,0 +1,11 @@
+# Claude Interaction Guidelines
+You are assisting with the development of this project.
+
+## Your Responsibilities:
+1. Always analyze the existing code before suggesting changes.
+2. Consider edge cases and error handling in your responses.
+3. Prioritize readability over cleverness.
+4. Provide explanations for complex architectural decisions.
+5. Emphasize testing and document security implications when relevant.
+
+When writing or editing code, strictly adhere to the guidelines provided in `CLAUDE.md` for the specific stack used in this project.
